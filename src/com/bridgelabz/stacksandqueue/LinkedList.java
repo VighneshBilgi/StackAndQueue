@@ -63,7 +63,7 @@ public class LinkedList<E> {
         Node<E> temp = head;
 
         if(head==null){
-            System.out.println("Stack is empty");
+            System.out.println("Queue is empty");
         }
 
         while (temp != null) {
@@ -76,5 +76,9 @@ public class LinkedList<E> {
         System.out.println();
     }
 
+    public void dequeue() {
+        E data = head.data;
+        head = head.next;
+    }
 
 }

@@ -42,6 +42,21 @@ public class LinkedListMain {
         linkedList3.displayQueue();
         System.out.println();
 
+        System.out.println("Viewing de-queueing elements of Queue : ");
+        LinkedList<Integer> linkedList4 = new LinkedList<>();
+        linkedList4.enqueue(56);
+        linkedList4.enqueue(30);
+        linkedList4.enqueue(70);
+        linkedList4.displayQueue();
+        System.out.println("After de-queueing Head of Queue : ");
+        linkedList4.dequeue();
+        linkedList4.displayQueue();
+        System.out.println("After de-queueing Head of Queue : ");
+        linkedList4.dequeue();
+        linkedList4.displayQueue();
+        System.out.println("After de-queueing Head of Queue : ");
+        linkedList4.dequeue();
+        linkedList4.displayQueue();
 
     }
 }
