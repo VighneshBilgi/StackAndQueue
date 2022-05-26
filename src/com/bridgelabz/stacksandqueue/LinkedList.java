@@ -2,6 +2,8 @@ package com.bridgelabz.stacksandqueue;
 
 public class LinkedList<E> {
     Node<E> top;
+    Node<E> head;
+    Node<E> tail;
 
     public void push(E data) {
         Node<E> newNode = new Node<>(data);
@@ -14,7 +16,7 @@ public class LinkedList<E> {
         }
     }
 
-    public void display(){
+    public void displayStack(){
 
         Node<E> temp = top;
 
@@ -44,5 +46,35 @@ public class LinkedList<E> {
         E data = top.data;
         top = top.next;
     }
+
+    public void enqueue(E data) {
+        Node<E> newNode=new Node<>(data);
+        if(head==null){
+            head=newNode;
+            tail=newNode;
+        }
+        else {
+            tail.next = newNode;
+            tail = newNode;
+        }
+    }
+
+    public void displayQueue() {
+        Node<E> temp = head;
+
+        if(head==null){
+            System.out.println("Stack is empty");
+        }
+
+        while (temp != null) {
+            System.out.print(temp.data);
+            temp = temp.next;
+            if (temp != null) {
+                System.out.print("->");
+            }
+        }
+        System.out.println();
+    }
+
 
 }

@@ -9,7 +9,7 @@ public class LinkedListMain {
         linkedList.push(30);
         linkedList.push(56);
         System.out.println("Printing elements of Stack : ");
-        linkedList.display();
+        linkedList.displayStack();
         System.out.println();
 
         System.out.println("Viewing the Top and Popping elements of Stack : ");
@@ -17,22 +17,31 @@ public class LinkedListMain {
         linkedList2.push(70);
         linkedList2.push(30);
         linkedList2.push(56);
-        linkedList2.display();
+        linkedList2.displayStack();
         System.out.println("Top of Stack : ");
         System.out.println(linkedList2.peek());
         System.out.println("After Popping Top of Stack : ");
         linkedList2.pop();
-        linkedList2.display();
+        linkedList2.displayStack();
         System.out.println("Top of Stack : ");
         System.out.println(linkedList2.peek());
         System.out.println("After Popping Top of Stack : ");
         linkedList2.pop();
-        linkedList2.display();
+        linkedList2.displayStack();
         System.out.println("Top of Stack : ");
         System.out.println(linkedList2.peek());
         System.out.println("After Popping Top of Stack : ");
         linkedList2.pop();
-        linkedList2.display();
+        linkedList2.displayStack();
+
+        LinkedList<Integer> linkedList3 = new LinkedList<>();
+        linkedList3.enqueue(56);
+        linkedList3.enqueue(30);
+        linkedList3.enqueue(70);
+        System.out.println("Printing elements of Queue : ");
+        linkedList3.displayQueue();
+        System.out.println();
+
 
     }
 }
